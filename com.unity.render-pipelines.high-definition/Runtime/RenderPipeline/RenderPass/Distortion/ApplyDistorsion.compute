@@ -37,8 +37,8 @@ void KMain(uint2 groupId : SV_GroupID, uint2 groupThreadId : SV_GroupThreadID, u
     if (any(distortedEncodedDistortionId < 0)
         || any(distortedEncodedDistortionId > int2(_Size.xy)))
     {
+        // In this case we keep the blur, but we offset don't distort the uv coords.
         distortion = 0.0f;
-
     }
 
     // We fetch a second time the _DistortionTexture for the at the distorded coordinate
