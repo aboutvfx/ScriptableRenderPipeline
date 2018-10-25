@@ -1601,8 +1601,8 @@ IndirectLighting EvaluateBSDF_ScreenspaceRefraction(LightLoopContext lightLoopCo
 
     float2 samplingPositionNDC = hit.positionNDC;
 
-    // This is an empirically set modifier to avoid halo of objects visible in the refraction
-    float refractionOffsetMultiplier = max(0.0f, 1.0f - preLightData.transparentSSMipLevel * 0.1f);
+    // This is an empirically set hack/modifier to reduce haloes of objects visible in the refraction.
+    float refractionOffsetMultiplier = max(0.0f, 1.0f - preLightData.transparentSSMipLevel * 0.08f);
 
     if (hitLinearDepth < posInput.linearDepth)
         samplingPositionNDC = posInput.positionNDC;
