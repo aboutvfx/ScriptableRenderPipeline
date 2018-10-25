@@ -680,7 +680,7 @@ namespace UnityEditor.Experimental.Rendering.HDPipeline
                 activeFields.Add("Decals");
             }
 
-            if (!masterNode.receiveDecals.isOn)
+            if (!masterNode.receiveSSR.isOn)
             {
                 activeFields.Add("DisableSSR");
             }
