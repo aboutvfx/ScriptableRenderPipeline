@@ -4,6 +4,8 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [5.1.0-preview] - 2018-10-18
+
 ## [5.0.0-preview] - 2018-09-28
 
 ### Added
@@ -24,6 +26,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Added intrinsic for XBone
 - Added new light volume debugging tool
 - Added a new SSR debug view mode
+- Added translaction's scale invariance on DensityVolume
+- Added multiple supported LitShadermode and per renderer choice in case of both Forward and Deferred supported
 - Added custom specular occlusion mode to Lit Shader Graph Master node
 
 ### Fixed
@@ -62,6 +66,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Changed  planar mapping to match terrain convention (XZ instead of ZX)
 - XRGraphicsConfig is no longer Read/Write. Instead, it's read-only. This improves consistency of XR behavior between the legacy render pipeline and SRP
 - Change reflection probe data migration code (to update old reflection probe to new one)
+- Updated gizmo for ReflectionProbes
+- Updated UI and Gizmo of DensityVolume
 
 ## [4.0.0-preview] - 2018-09-28
 
